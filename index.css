@@ -1,4 +1,3 @@
-/* 追加 */
 html, body {
     height: 100%;
     margin: 0;
@@ -15,19 +14,23 @@ article {
 }
 
 .header-content {
-    background-color: red;
+    background-color: #6264a7;
     height: 43px;
     width: 100%;
     text-align: center;
     vertical-align: middle;
+    border-bottom: 1px solid #ffffff;
 }
 
 .content-main {
-    background-color: aqua;
+    background-color: #ffffff	;
     width: 100%;
     height: 100%;
     text-align: center;
     display: flex;
+    align-items: flex-end;    /* 下揃え */
+    justify-content: center;  /* 横中央 */
+    position: relative;
 }
 
 /*検索ボックスデザイン*/
@@ -39,6 +42,7 @@ article {
     background: #fcfcfc;
     color: #333;
     line-height: 1.5;
+    margin-top: 4px;
 }
 
 .message-input {
@@ -51,12 +55,30 @@ article {
     color: #333;
     font-size: 1em;
     line-height: 1.4;
-    position: fixed;
-    bottom: 0;
+    margin-bottom: 8px;
 }
 
 .message-input::placeholder {
     color: #999;
 }
 
+.send-btn {
+    height: 38px;
+    width: 48px;
+    border: none;
+    border-radius: 3px;
+    background: #4a90e2;
+    color: #fff;
+    font-size: 1.0em;
+    cursor: pointer;
+    flex-shrink: 0;
 
+}
+
+.send-btn:hover { 
+    background: #357abd;
+}
+
+.send-btn:active {
+    background: #2a6099;
+}

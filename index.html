@@ -19,7 +19,7 @@
             <div class="content">
 
                 <div class="sideber">
-                    <p>サイドバー</p>
+                    <p></p>
                 </div>
 
 
@@ -28,9 +28,9 @@
                     <div class="sideber-header">
                         <h5>チャット</h5>
                         <div class="sideber-icon">
-                            <span>●</span>
-                            <spam>▶</spam>
-                            <spaN>◆</spaN>
+                            <span><button>…</button></span>
+                            <span><button>🔎</button></span>
+                            <span><button>□</button></span>
                         </div>
                     </div>
 
@@ -42,11 +42,42 @@
                         <button>会議チャット</button>
                     </div>
 
-                    <p>連絡先表示に利用</p>
+                    <details>
+                        <summary>チャット</summary>
+                        <ul class="chat-list">
+                            <li>
+                                <a>河村 聖夜</a>
+                            </li>
+                            <li>
+                                <a>情報 太郎</a>
+                            </li>
+                            <li>
+                                <a>情報 花子</a>
+                            </li>
+                            <li>
+                                <a>株式 太郎</a>
+                            </li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>チャネル</summary>
+                        <ul class="channel-list">
+                            <li>
+                                <a>全体共有</a>
+                            </li>
+                            <li>
+                                <a>ショートトレーニング</a>
+                            </li>
+                            <li>
+                                <a>課題</a>
+                            </li>
+                        </ul>
+                    </details>
                 </div>
 
                 <div class="content-main">
                     <textarea class="message-input" placeholder="メッセージ"></textarea>
+                    <button class="send-btn" onclick="sendMessage()">送信</button>
                 </div>
             </div>
         </article>
