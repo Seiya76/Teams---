@@ -82,3 +82,35 @@ article {
 .send-btn:active {
     background: #2a6099;
 }
+
+
+/*chatDisplay.jsにて画面書き換えを行った際のHTML用のCSS*/
+/*画面上部に表示される部分とメッセージ送信部分のデザイン*/
+.main-view {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-view h2 {
+    margin: 0;
+    padding: 15px;
+    border-bottom: 1px solid #d0d0d0;
+    text-align: left;
+}
+
+.message-area {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.message-box {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-top: 1px solid #d0d0d0;
+    justify-content: center;
+}
