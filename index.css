@@ -22,6 +22,10 @@ article {
     border-bottom: 1px solid #ffffff;
 }
 
+.header-content a {
+    color:#ffffff;
+}
+
 .content-main {
     background-color: #ffffff	;
     width: 100%;
@@ -114,3 +118,5 @@ article {
     border-top: 1px solid #d0d0d0;
     justify-content: center;
 }
+
+
